@@ -1,0 +1,217 @@
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+}
+
+.row{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* NavBar */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 22px;
+    font-family: sans-serif;
+    column-gap: 83px;
+    padding-left: 92px;
+}
+
+nav>img:last-child{
+    height: 47px;
+}
+
+
+/* intro section */
+.intro-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+}
+
+.left-section{
+    width: 50%;
+}
+
+.left-section>h3{
+    font-size: 41px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.left-section>h3>img{
+    height: 45px;
+}
+
+.left-section>h1{
+    font-size: 56px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.sub-headlines{
+    margin-left: 73px;
+}
+
+.sub-headline{
+    font-size: 26px;
+}
+
+.sub-headline>img{
+    background-color: #FE5E35;
+    border-radius: 16px;
+    padding: 1px 1px;
+    margin-right: 7px;
+}
+
+.text{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.action-btn{
+    padding: 16px 26px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 29px;
+    background-color: #FE5E35;
+    margin-right: 20px;
+}
+
+/* right section */
+.right-section{
+    width: 50%;
+}
+
+.headphone-div>img:first-child{
+    position: absolute;
+    top: 37ch;
+    width: 11%;
+    right: 69ch;
+}
+
+.discount-content{
+    position: absolute;
+    z-index: 10;
+    top: 39ch;
+    right: 73ch;
+}
+
+.discount-content>h1{
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.discount-content>h4{
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.headphone-div>img:last-child{
+    width: 37%;
+    position: absolute;
+    z-index: -1;
+    bottom: 15ch;
+}
+
+.right-section>.action{
+    position: absolute;
+    bottom: 0;
+    right: 35ch;
+}
+
+.dots{
+    position: absolute;
+    bottom: 9ch;
+    display: flex;
+    flex-direction: row;
+    right: 46ch;
+}
+
+.dots>.yellow-dot{
+    background-color: #fbd104;
+    height: 24px;
+    border-radius: 31px;
+    width: 24px;
+}
+
+.dots>.tomato-dot{
+    background-color: #fe5e35;
+    height: 24px;
+    border-radius: 31px;
+    width: 24px;
+    margin: 0px 23px;
+}
+
+.dots>.black-dot{
+    background-color: #000;
+    height: 24px;
+    border-radius: 31px;
+    width: 24px;
+}
+
+
+/* css for responsive */
+
+@media(max-width: 767px){
+    .row{
+        width: 100%;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        position: absolute;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .left-section{
+        width: 100%;
+    }
+
+    .left-section>h1{
+        font-size: 44px;
+    }
+
+    .left-section>h3{
+        font-size: 37px;
+    }
+
+
+    /* right section */
+    .right-section{
+       display: none;
+    }
+
+
+
+
+
+
+}
